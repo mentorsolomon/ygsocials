@@ -1,0 +1,18 @@
+ {% extends "common.html" %}
+ {% block title %}SIGN UP{% endblock title %}
+ {% load static %}
+    {% block content %}
+        <section class="bg-light-shadow py-5 p-2">
+            <section class="container border border-3 col-lg-4 p-5 bg-light" style="border-radius: 10px; margin-top: 50px; height: max-height;">
+            <!-- #97a9eb -->
+                <h3>Sign Up Here</h3>
+                <form method="post"> 
+                    {% csrf_token %}
+                    {% load bootstrap %}
+                    {{form|bootstrap}}                    
+                    <button type="submit" class="btn" style="color: white; background-color: rgb(140,160,233);">Sign Up</button>
+                    {% comment %} rgb(167, 154, 142); {% endcomment %}
+                </form>
+            </section>
+        </section>
+    {% endblock content %}

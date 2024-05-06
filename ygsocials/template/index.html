@@ -1,0 +1,178 @@
+{% extends "common.html" %}
+    {% block title %}Social Media Agency{% endblock title %}
+        {% load static %}
+    {% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="display-4">We are glad you chose us</h1>
+                    <p class="lead">Your gateway to innovative social media strategies</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mt-lg-0 text-center">
+                    <!-- Image or Illustration -->
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNvY2lhbCUyMG1lZGlhJTIwYWdlbmN5fGVufDB8fDB8fHww" alt="Social Media Agency" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <!-- Service Cards -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Strategy</h5>
+                            <p class="card-text">Crafting effective social media strategies tailored to your brand.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the above card structure for each service -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Content Creation</h5>
+                            <p class="card-text">Engaging content creation for your social media platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Community Management</h5>
+                            <p class="card-text">Building and managing communities to enhance brand presence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Advertising</h5>
+                            <p class="card-text">Effective advertising campaigns on social media platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Analytics and Reporting</h5>
+                            <p class="card-text">In-depth analytics and reporting to measure campaign success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Page Audit/Set-up</h5>
+                            <p class="card-text">We help fix errors, revamp your page and set up from scratch if required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <!-- Gallery or Showcase of Previous Work -->
+        <div class="row">
+            <!-- Display portfolio items -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1399.jpeg" %}" class="card-img-top" alt="Portfolio Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Here is a chat conversation of one of our clients already preparing to renew there packages.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other portfolio items -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1400.jpeg" %}" class="card-img-top" alt="Portfolio Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Here is a brand flourishing after implementing our winning social media strategies and top notch page management skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1401.jpeg" %}" class="card-img-top" alt="Portfolio Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Here is a testimonial from one of our old clients showering us loves and reviews of job well done.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1402.jpeg" %}" class="card-img-top" alt="Portfolio Item 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">A review from a newly onborded client referred by one of old clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1403.jpeg" %}" class="card-img-top" alt="Portfolio Item 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5</h5>
+                        <p class="card-text">Here is a thrift clothing brand who trusted our services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{% static "./img/IMG_1404.jpeg" %}" class="card-img-top" alt="Portfolio Item 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 6</h5>
+                        <p class="card-text">Here is a Comedian who trusted our agency to promote his brand awareness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <form target="_blank"action="https://getform.io/f/xe7olGe7" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your fullname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your valid email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What do you have for us</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="We would like to hear from you..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" value="Send" onClick="refreshPage() "class="btn btn-outline-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    {% endblock content %}

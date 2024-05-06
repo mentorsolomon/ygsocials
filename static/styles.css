@@ -1,0 +1,271 @@
+       /* Your custom styles can go here, or link to an external stylesheet */
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+         margin: 0;
+         padding: 0;
+     }
+
+     /* Typography */
+     body {
+         font-family: 'Roboto', sans-serif;
+         line-height: 1.6;
+     }
+
+     h1, h2, h3 {
+         font-family: 'Poppins', sans-serif;
+     }
+
+     /* Navbar Styles */
+     .navbar {
+      background-color: rgba(248, 249, 250, 0.8); /* Transparent background */
+      box-shadow: none; /* Remove box shadow */
+      /* z-index: -200; */
+  }
+  .navbar-brand {
+      color: #8CA0E9 !important;
+      font-weight: bold;
+  }
+
+  /* Hover effect for navbar and brand */
+
+
+  .navbar-nav .nav-item {
+      margin-right: 10px;
+  }
+  .navbar-nav .nav-link {
+   color: #C7BAAD !important;
+  }
+  .navbar-nav .nav-link:hover {
+   color: #8CA0E9 !important;
+  }
+
+  /* Navbar Toggle Button Styles */
+.navbar-toggler {
+   background-color: #007bff; /* Set the background color of the toggle button */
+   border: none; /* Remove border from the toggle button */
+   padding: 8px 12px; /* Adjust padding for the toggle button */
+}
+
+.navbar-toggler-icon {
+   background-color: #fff; /* Set the color of the hamburger icon */
+}
+
+.navbar-toggler:hover {
+   background-color: #0056b3; /* Change the background color on hover */
+}
+
+/* Add transition for a smooth effect */
+.navbar-toggler {
+   transition: background-color 0.3s ease-in-out;
+}
+
+
+     /* Hero Section Styles */
+     .hero {
+         background-color: #f8f9fa;
+         padding: 100px 0;
+         text-align: center;
+     }
+
+     .hero h1 {
+         font-size: 3rem;
+         margin-bottom: 20px;
+         color: #343a40;
+     }
+
+     .hero p {
+         font-size: 1.2rem;
+         margin-bottom: 30px;
+         color: #6c757d;
+     }
+
+     /* Image Styles */
+.img-fluid {
+   max-width: 100%; /* Ensure images do not exceed their container's width */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Add a subtle border-radius for rounded corners */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+.img-fluid:hover {
+   transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+     /* Services Section Styles */
+     .services {
+         padding: 80px 0;
+         background-color: #C7BAAD;
+     }
+
+     .services h2 {
+         margin-bottom: 40px;
+         color: #343a40;
+     }
+
+     .card {
+      border: none; /* Remove the card border */
+      border-radius: 8px; /* Add a border-radius for rounded corners */
+      overflow: hidden; /* Hide any overflowing content */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+      transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+  }
+  
+  .card-body h5 {
+   color: #0056b3;
+  }
+
+  /* Hover effect for cards */
+.card:hover {
+   transform: scale(1.05); /* Enlarge the card slightly on hover */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the box shadow on hover */
+}
+
+     .card-title {
+         font-size: 1.5rem;
+         margin-bottom: 10px;
+         color: #343a40;
+     }
+
+     /* Portfolio Section Styles */
+     .portfolio {
+         background-color: #f8f9fa;
+         padding: 80px 0;
+     }
+
+     .portfolio h2 {
+         margin-bottom: 40px;
+         color: #343a40;
+     }
+
+     .portfolio img {
+         width: 100%;
+         border: 1px solid #dee2e6;
+         border-radius: 8px;
+         margin-bottom: 20px;
+     }
+
+/* Contact Section Styles */
+.contact {
+   background-color: #C7BAAD;
+   padding: 80px 0;
+   text-align: center;
+}
+
+.contact h2 {
+   margin-bottom: 40px;
+   color: #343a40;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-control {
+   border-radius: 0;
+}
+
+textarea.form-control {
+   resize: vertical;
+}
+
+.btn-primary {
+   background-color: #007bff;
+   border-color: #007bff;
+   font-size: 1rem;
+}
+
+.btn-primary:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+}
+
+
+/* Responsive Contact Styles */
+@media (max-width: 768px) {
+   .contact form {
+       text-align: left;
+   }
+}
+
+     /* Footer Styles */
+.footer {
+   background-color: #343a40;
+   color: #fff;
+   padding: 40px 0;
+   font-size: 16px;
+}
+
+.footer h4 {
+   color: #fff;
+}
+
+.footer p {
+   margin-bottom: 10px;
+}
+
+.footer ul {
+   list-style: none;
+   padding: 0;
+}
+
+.footer ul li {
+   display: inline-block;
+   margin-right: 15px;
+}
+
+.footer a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.footer a {
+   color: inherit; /* Inherit the color from the parent element */
+   text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+   text-decoration: none; /* Remove underline on hover */
+   color: #99BEF2;
+}
+
+.footer hr {
+   border-color: #fff;
+}
+.footer ul li a {
+   color: #fff;
+   font-size: 24px;
+   margin-right: 15px;
+}
+
+.footer ul li a:hover {
+   color: #ccc;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+   .list-inline {
+      margin-left: 30px;
+   }
+   .footer {
+       text-align: center;
+   }
+
+   .footer ul {
+       margin-top: 20px;
+   }
+
+   /* .footer ul li {
+       display: block;
+       margin-bottom: 10px;
+   } */
+   .footer ul li a {
+      color: #fff;
+      font-size: 24px;
+      margin-right: 15px;
+  }
+  
+  .footer ul li a:hover {
+      color: #ccc;
+  }
+}

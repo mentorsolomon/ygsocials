@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "styles.css" %}"> <!-- Link to your CSS file -->
+    <link rel="icon" href="{% static "./Favicon.ico.bmp" %}">
+    <script src="https://kit.fontawesome.com/9dda25d40e.js" crossorigin="anonymous"></script>
+
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Poppins:wght@400;700&display=swap">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+   <a class="navbar-brand" href="#">YourSocialMediaGuy</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto">
+           <li class="nav-item active">
+               <a class="nav-link" href="{% url "home" %}">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="{% url "home" %}">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "home" %}">Contact Us</a>
+            </li>
+
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "portfolio" %}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "password_change" %}">Change Password</a>
+            </li>
+            <li class="nav-item">
+                <form action="{% url "logout" %}" method = "post">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-item btn " style="border: 2px solid rgb(199,186,173); color: rgb(199,186,173);">Logout</button>
+                </form>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "login" %}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "signup" %}">Signup</a>
+            </li>
+            {% endif %}
+             
+       </ul>
+   </div>
+</nav>
+
+<!-- ========================================== -->
+
+{% block content %}
+{% endblock content %}
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentYear = new Date().getFullYear();
+            var copyrightElement = document.getElementById("copyright");
+            copyrightElement.innerText = currentYear;
+        });
+    </script>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+               <h4>Get in touch</h4>
+               <p>tunedaytv@gmail.com</p>
+           </div>
+           <div class="col-md-6">
+               <h4>Follow Us</h4>
+               <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://web.facebook.com/yoursocialmediaplug" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/its_tuneday" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/its_tuneday/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       <div class="row">
+           <div class="col-md-12 text-center">
+            <p>&copy; <span id="copyright"></span> <a href="#">YourSocialMediaGuy</a>. All rights reserved.</p>
+           </div>
+       </div>
+   </div>
+</footer>
+
+
+    
+    <!-- Include Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{% static "index.js" %}" type="text/javascript"></script>
+
+
+    
+    </body>
+    </html>
+    

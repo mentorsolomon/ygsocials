@@ -1,0 +1,78 @@
+{% extends "common.html" %}
+{% block title %}Portfolio{% endblock title %}
+{% load static %}
+{% block content %}
+        <!-- Portfolio Start -->
+        <div class="portfolio">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h1 class="display-5" style="font-size: 55px;">Gallery</p>
+                    <h2>Some Images From Our Social media Gallery</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">Easy Cheesey</li>
+                            <li data-filter=".first">Premium Works</li>
+                            <li data-filter=".second">Diamond Bouquee</li>
+                            <li data-filter=".third">Regular work</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1399.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1399.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1400.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1400.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1401.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1401.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1402.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1402.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1403.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1403.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1404.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1404.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+                        <div class="portfolio-wrap">
+                            <a href="{% static "img/IMG_1406.jpeg" %}" data-lightbox="portfolio">
+                                <img src="{% static "img/IMG_1406.jpeg" %}" alt="Portfolio Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}
+    
+       
